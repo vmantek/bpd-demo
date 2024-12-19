@@ -1,0 +1,12 @@
+.gradle
+.vagrant
+.idea
+.tmp_sys_*
+/*/.attic
+build
+/*/out
+/*/db
+/*/log
+/*/runtime
+*.sh
+

@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.vmantek.qrtest'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://jpos.org/maven' }
+    maven { url 'https://download.oracle.com/maven' }
+}
+
+dependencies {
+    implementation group: 'org.jpos', name: 'jpos', version: '2.1.9'
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
